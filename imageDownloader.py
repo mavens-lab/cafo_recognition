@@ -29,7 +29,7 @@ tau = 6.283185307179586
 DEGREE = tau / 360
 
 ZOOM_OFFSET = 8
-GOOGLE_MAPS_API_KEY = 'AIzaSyCcUz3fbFQG8GAgVUX1kuwL78aujDzLYyk'  # set to 'your_API_key'
+GOOGLE_MAPS_API_KEY =  # set to 'your_API_key'
 
 # Max width or height of a single image grabbed from Google.
 MAXSIZE = 640
