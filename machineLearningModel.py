@@ -21,13 +21,13 @@ model.compile(optimizer='adam',
               loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
               metrics=['accuracy'])
 
-# model.fit(training_data, training_labels, epochs=5)
-#
-# test_loss, test_acc = model.evaluate(testing_data,  testing_labels, verbose=2)
-#
-# print('\nTest accuracy:', test_acc)
+model.fit(training_data, training_labels, epochs=5)
 
-# model.save('beta_model')
+test_loss, test_acc = model.evaluate(testing_data,  testing_labels, verbose=2)
+
+print('\nTest accuracy:', test_acc)
+
+model.save('beta_model')
 
 probability_model = tf.keras.models.load_model('beta_model')
 
